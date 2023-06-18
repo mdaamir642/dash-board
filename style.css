@@ -53,3 +53,11 @@ flex-direction: column;
 h1{
     text-align: center;
 }
+.log-in{
+background: linear-gradient(to right, #ffffff , rgb(0, 0, 0) 100%);
+
+}
+.sign-up{
+    background: linear-gradient(to left, #5a9cc9 20% , rgb(255, 255, 255) 100%);
+    
+    }

@@ -1,4 +1,4 @@
-function signup(){
+function signUp(){
 console.log("hello world")
 var fullName = document.getElementById("fullName").value;
 var phoneNumber = document.getElementById("phoneNumber").value;
@@ -40,20 +40,33 @@ if (findUser === undefined) {
 }
 else{
     alert("email address already exists")
+window.location.href = "./index.html"
+}
 
 }
 
+}
 
+function logIn(){
+console.log("hello world")
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+
+var getUser = JSON.parse(localStorage.getItem("users"))
+var user = getUser.find(function (value){
+if (value.email === email) return true 
+
+
+
+})
+if (user != -1) {
+    alert("success fully login")
+    localStorage.setItem("logInUser", JSON.stringify(user))
+    window.location.replace ("./dash-board.html")
 }
 
 
 
 
-
-
-
-
-
-
-
 }
+
