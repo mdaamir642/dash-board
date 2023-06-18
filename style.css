@@ -1,0 +1,55 @@
+.line1{
+font-size: 12px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #000000cb;
+margin-top: 4px;
+}
+.email, .password, .full-name, .ph-no{
+display: flex;
+flex-direction: column;
+}
+.email-input, .password-input, .full-name-input, .ph-no-input{
+
+    padding: 10px 5px 10px 5px;
+}
+.email-label, .password-label, .full-name-label, .ph-no-label{
+    margin-bottom: 6px;
+    margin-left: 2px;
+}
+.create{
+text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 15px;
+color: #005ac9;
+}
+.create:hover{
+text-decoration: underline;
+
+}
+.submitBtn{
+padding:10px 15px 10px 15px ;
+font-size: 15px;
+border-radius:5px ;
+background-color: #1b74e4;
+border: none;
+cursor: pointer;
+}
+.submitBtn:active{
+    background-color: #005ac9;
+
+
+
+
+}
+.login-page{
+display: flex;
+
+height: 500px;
+justify-content: center;
+gap: 15px;
+width: 70%;
+flex-direction: column;
+}
+h1{
+    text-align: center;
+}
