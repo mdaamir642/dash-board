@@ -9,6 +9,17 @@
 </head>
 <body>
 <h1>dash-board</h1>
+<div class="todoContainer"> 
+    <div class="tittleDesc">
+        <input placeholder="Add Title" class="title" id="title" type="text">
+        <textarea placeholder="Add Desc..." class="desc"  id="desc" type="textarea" rows="5px"></textarea>
+    </div>
+    <div>
+        <button class="addBtn" onclick="addPost()">Add Post</button>
+    </div>
+</div>
+<p id="invalid"></p>
+<div id="cont"></div>
 
 
 
@@ -17,16 +28,13 @@
 
 
 
+<button onclick="logOut()">logout</button>
 
 
 
 
 
-
-
-
-
-
+<script src="login.js"></script>
 
 
     <script src="app.js"></script>
