@@ -8,7 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>dash-board</h1>
+    <div>
+        <ul class="nav-bar">
+            <div>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </div>
+          <div>  <li> <h2 id="fullName" ></h2></li></div>
+        
+        <div>
+          <li>
+              <button onclick="logOut()" class="logout-btn">logout</button>
+            
+            </li>
+         
+        </div>
+        </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
 <div class="todoContainer"> 
     <div class="tittleDesc">
         <input placeholder="Add Title" class="title" id="title" type="text">
@@ -19,6 +48,9 @@
     </div>
 </div>
 <p id="invalid"></p>
+<div class="loader-cont">
+    <div class="loader"></div>
+    </div>
 <div id="cont"></div>
 
 
@@ -27,16 +59,14 @@
 
 
 
-
-<button onclick="logOut()">logout</button>
-
-
+<div class="logout">
+</div>
 
 
 
-<script src="login.js"></script>
+<script src="dashboard.js"></script>
 
 
-    <script src="app.js"></script>
+
 </body>
 </html>

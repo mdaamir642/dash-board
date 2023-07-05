@@ -64,6 +64,33 @@ background: linear-gradient(to right, #ffffff , rgb(0, 0, 0) 100%);
 
 
 
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: #04AA6D;
+      }
 
 
 
@@ -78,6 +105,64 @@ background: linear-gradient(to right, #ffffff , rgb(0, 0, 0) 100%);
 
 
 
+
+
+
+    
+
+
+
+
+
+.loader-cont{
+display: flex;
+justify-content: center;
+
+position:relative;
+z-index: -1;
+
+}
+
+
+
+
+    .logout-btn{
+padding: 10px;
+font-size: 18px;
+font-weight: bolder;
+background-color: rgb(148, 10, 10);
+border-radius: 15px;
+cursor: pointer;
+    }
+    .logout-btn:active{
+      background-color: rgb(202, 13, 13);
+
+
+    }
+    .loader {
+        border: 17px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid rgb(0, 140, 255);
+        border-bottom: 16px solid blue;
+        width: 40px;
+        height: 40px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 3s linear infinite;
+     display: flex;
+gap: 10px;
+     justify-self: center;
+     display: none;
+    }
+      
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
 
 
 
@@ -148,5 +233,18 @@ flex-direction: column;
 line-height: 10px;
 align-items: center;
 margin-top: 50px;
+border-radius: 30px;
+}
+
+.nav-bar{
+display: flex;
+
+justify-content: space-between;
+align-items: center;
+
+}
+#fullName{
+background: linear-gradient(#ce594a 0%, #470e6d 100%);
+font-size: 35px;
 border-radius: 30px;
 }
